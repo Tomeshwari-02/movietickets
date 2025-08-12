@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 Movie Ticket Booking</h1>
+    </header>
+
+    <main>
+        <section class="movie-select">
+            <label for="movie">Choose a movie:</label>
+            <select id="movie">
+                <option value="10">Avengers: Endgame ($10)</option>
+                <option value="12">Spider-Man: No Way Home ($12)</option>
+                <option value="8">Minions: Rise of Gru ($8)</option>
+                <option value="15">The Batman ($15)</option>
+            </select>
+        </section>
+
+        <section class="seat-layout">
+            <p>Select your seats:</p>
+            <div class="screen">SCREEN</div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+            </div>
+        </section>
+
+        <section class="summary">
+            <p>Seats Selected: <span id="count">0</span></p>
+            <p>Total Price: $<span id="total">0</span></p>
+            <button id="bookBtn">Book Now</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
